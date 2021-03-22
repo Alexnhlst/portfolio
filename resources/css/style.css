@@ -1,0 +1,173 @@
+html {
+  background: #010a2d;
+  font-family: lato, sans-serif;
+  color: #c6e3ed;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #010825;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #8f6197;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+.nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #c6e3ed;
+}
+
+.herobox {
+  display: flex;
+  height: 1050px;
+  overflow: hidden;
+  width: 100%;
+  flex-direction: column;
+}
+
+.description {
+  position: absolute;
+  width: 65%;
+  top: 40%;
+  margin-left: 15%;
+}
+
+.description h1 {
+  font-size: 50px;
+}
+
+.description span {
+  color: #8f6197;
+}
+
+.description h2 {
+  font-size: 40px;
+  /* margin-left: 10px; */
+  margin-top: 20px;
+  line-height: 2;
+}
+
+.description p {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.wrap {
+  display: inline-flex;
+}
+
+.cursor {
+  background-color: #8f6197;
+  width: 5px;
+  height: 40px;
+  margin-left: 3px;
+  position: relative;
+  top: 12.5px;
+  animation: blink 2s linear infinite;
+}
+
+.scroll {
+  position: absolute;
+  top: 90%;
+  transform-origin: 100 0;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  color: #c6e3ed;
+  font-size: 13px;
+}
+
+.arrow {
+  background-color: #c6e3ed;
+  width: 5px;
+  height: 100px;
+  position: absolute;
+  top: 85.5%;
+  left: 4%;
+}
+
+.arrow::after {
+  content: "";
+  transform: rotate(45deg);
+  width: 5px;
+  height: 15px;
+  background-color: #c6e3ed;
+  position: absolute;
+  left: 4px;
+  top: 90%;
+}
+.arrow::before {
+  content: "";
+  transform: rotate(-45deg);
+  width: 5px;
+  height: 15px;
+  background-color: #c6e3ed;
+  position: absolute;
+  left: -4px;
+  top: 90%;
+}
+.information {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  background-color: #f6f6f6;
+  color: #010a2d;
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 7px 10px 10px 0px rgba(0, 0, 0, 1);
+}
+
+.hide {
+  opacity: 0;
+}
+
+.container h2 {
+  font-size: 32px;
+  margin-left: 2%;
+}
+
+.container .separator {
+  width: 20%;
+  height: 5px;
+  margin: 2% 2%;
+  background-color: #8f6197;
+}
+
+.slideup {
+  animation: fadeInUp 1s both;
+}
+
+.slidedown {
+  animation: fadeInDown 1s;
+}
+
+.container p {
+  margin: 2% 2%;
+  font-family: Oswald, sans-serif;
+  line-height: 2;
+}
+
+.footer {
+  padding: 5%;
+}
+
+.footer p {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20%;
+}
