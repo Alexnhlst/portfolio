@@ -8,19 +8,15 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./resources/css/reset.css" />
     <link rel="stylesheet" href="./resources/css/style.css" />
-    <link rel="stylesheet" href="./resources/css/animation.css" />
+    <!-- <link rel="stylesheet" href="./resources/css/animation.css" /> -->
     <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,900&family=Oswald:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <section class="herobox">
-      <nav class="nav">
-        <a href="#about">About me</a>
-        <a href="#">Projects</a>
-      </nav>
+      <!-- <nav class="nav">
+        <a href="#">about me</a>
+        <a href="#">projects</a>
+      </nav> -->
       <div class="description">
         <h1><span>&lt;h1&gt;</span>Hello 👋<span>&lt;/h1&gt;</span></h1>
         <h2>I'm <span>Alex</span></h2>
@@ -28,29 +24,33 @@
           <p id="text">Developer</p>
         </div>
       </div>
-      <p class="scroll">Scroll Down</p>
-      <div class="arrow"></div>
     </section>
     <section class="information">
-      <div id="about" class="container hide">
-        <h2>About Me</h2>
-        <div class="separator"></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-          laudantium mollitia quo, quibusdam voluptates ducimus consectetur
-          magni? Sequi sed veritatis neque, tempora nobis quis quia porro unde
-          suscipit et commodi.
-        </p>
-      </div>
-      <div id="project" class="container hide">
-        <h2>Skill | Projects</h2>
-        <div class="separator"></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-          laudantium mollitia quo, quibusdam voluptates ducimus consectetur
-          magni? Sequi sed veritatis neque, tempora nobis quis quia porro unde
-          suscipit et commodi.
-        </p>
+      <div class="container">
+        <div class="header">
+          <h2 id="about">About Me</h2>
+          <h2 id="skills" class="text-not-selected">Skills</h2>
+          <!-- <h2>Skills</h2> -->
+        </div>
+        <div class="about">
+          <div class="photo"></div>
+          <div class="separator"></div>
+          <h2>My name is Alex</h2>
+          <p class="text">
+            I'm 27 years old. Mainly interested in web design, I've started
+            programming about an year ago. I'm currently studying to get a
+            degree and to improve my programming skills.
+          </p>
+          <p class="text">
+            This page is a milestone for my programming career. I mainly wanted
+            to experiment with what I learned so far.
+          </p>
+        </div>
+        <div class="skills hidden">
+          <div class="skillBars">
+            <div class="info"></div>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer">
